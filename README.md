@@ -1,8 +1,12 @@
 # Stm8Ida
-STM8 ida 6.6 processor module
+STM8 IDA processor module
 
 Support for STMicroelectronics' STM8 series of microcontrollers
 
-Fork changes:
-- Added definition for STM8S005K6.
-- Downgraded needed ida SDK version to 6.6.
+## Linux Building instructions
+
+1. Get the IDA SDK from https://www.hex-rays.com/products/ida/support/download/
+2. Move this directory to `$SDKDIR/modules/`. 
+3. Run `make`
+4. Run `sudo make install`
+5. The processor type `SGS-Thomson STM8` should now show up in IDA.
