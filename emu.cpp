@@ -230,7 +230,7 @@ int idaapi emu(const insn_t &insn)
 	if (segtype(insn.ea) == SEG_XTRN) 
 		flow = 0;
 	if (flow) 
-		insn.add_cref(insn.ea + insn.size, 0, fl_F);
+		insn.add_cref(insn.ea + insn.size, 0, fl_F);	//没有这一条, 一次只会分析一条指令了
 
 	//
 	// Handle SP modifications
